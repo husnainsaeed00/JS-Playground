@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<!--``-->
+    <head>
+        <title>Prctie</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('select').onchange = function() {
+                    document.querySelector('#hello').style.color = this.value;
+
+                }
+                
+                
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id='hello'>Hello lets play with the colors </h1>
+        <!--<button data-color="red">Red</button>
+        <button data-color="green">Green</button>
+        <button data-color="blue">Blue</button>-->
+        <select>
+            <option value="black">Black</option>
+            <option value="green">GREEN</option>
+            <option value="blue">BLUE</option>
+            <option value="red">RED</option>
+        </select>
+    </body>
+
+</html>
